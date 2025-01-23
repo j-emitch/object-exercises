@@ -22,5 +22,33 @@ Starter Code:
 */
 
 function convertObjectToList(obj) {
-  // your code here
+  var returnArr = [];
+  var objKeys = Object.keys(obj);
+  var objValues = Object.values(obj);
+  var tempArr = [];
+
+  for (let i = 0; i < objKeys.length; i++) {
+    
+    tempArr = [objKeys[i], objValues[i]];
+    returnArr.push(tempArr);    
+  }
+
+  // for (prop in obj) {
+  //   var keyValueArr = [];
+
+  //   keyValueArr.push(prop);
+  //   keyValueArr.push(obj[prop])
+
+  //   returnArr.push(keyValueArr);
+  // }
+
+  return returnArr;
 }
+
+// var ex = {
+//   name: 'Holly',
+//   age: 35,
+//   role: 'producer'
+// };
+
+// convertObjectToList(ex);
