@@ -28,6 +28,24 @@ Starter Code
 */
 
 function listAllValues(obj) {
-  // your code here
+  var returnArr = [];
+  var objValues = Object.values(obj);
 
+  // for (prop in obj) {
+  //   returnArr.push(obj[prop]);
+  // }
+
+
+  for (let index = 0; index < Object.keys(obj).length; index++) {
+    returnArr.push(objValues[index]); 
+  }
+
+  return returnArr;
 }
+
+// var ex = {
+//   name : 'Krysten',
+//   age : 33,
+//   hasPets : false
+// }
+// listAllValues(ex);
