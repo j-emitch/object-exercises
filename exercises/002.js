@@ -22,9 +22,18 @@ Function's return value (output):
 Starter Code:
 function getAllKeys(obj) {
   // your code here
+  // for (var i=0; i<Object.keys(obj).length; i++) {
+  //   returnArr.push(Object.keys(obj)[i]);
+  // }
 }
 */
 
 function getAllKeys(obj){
-  // your code here
+  var returnArr = [];
+
+  for (prop in obj) {
+    returnArr.push(prop);
+  }
+  return returnArr;
 }
+
