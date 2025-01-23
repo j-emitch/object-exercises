@@ -21,5 +21,18 @@ Starter Code:
 
 function fromListToObject(array) {
   // your code here
+  var returnObj = {};
 
+  for (let index = 0; index < array.length; index++) {
+    const element1 = array[index][0];
+    const element2 = array[index][1];
+
+    returnObj[element1] = element2;
+  }
+
+  return returnObj;
 }
+
+// var array1 = [['make', 'Ford'], ['model', 'Mustang'], ['year', 1964]];
+
+// fromListToObject(array1);
